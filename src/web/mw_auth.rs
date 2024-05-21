@@ -12,6 +12,7 @@ pub async fn mw_require_auth(
     next:Next,) 
     ->Result<Response> {
     println!("->> {:<12} - mw_require_auth","MIDDLEWARE");
+    println!("->> {:<12} - mw_require_auth","MIDDLEWARE");  
     let auth_token=cookies.get(AUTH_TOKEN).map(|c| c.value().to_string());
 
 /*    //TODO: Real aith-token parsing and validation
